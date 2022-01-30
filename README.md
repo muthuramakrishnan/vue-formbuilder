@@ -1,3 +1,6 @@
+This is a form from https://qiaoxun.github.io/vue-formbuilder/
+https://github.com/qiaoxun/vue-formbuilder/issues
+
 # vue-formbuilder2.0
 
 Basic code was clone from https://github.com/jmeei/vue-formbuilder, and did some improve.
