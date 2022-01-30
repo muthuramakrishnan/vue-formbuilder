@@ -20,7 +20,7 @@ import {
   FormBuilder
 } from '@/components/form_elements/formbuilder';
 import draggable from 'vuedraggable';
-
+import _ from 'lodash';
 export default {
   name: 'Elements',
   store: ['forms'],
