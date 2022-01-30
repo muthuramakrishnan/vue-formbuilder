@@ -1,4 +1,6 @@
-This is a fork from https://github.com/qiaoxun/vue-formbuilder/issues
+This is a fork from https://github.com/qiaoxun/vue-formbuilder
+
+Cloned this only for educational purposes
 
 # vue-formbuilder2.0
 
