@@ -57,7 +57,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: true,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           advancedOptions: true,
           showPassword: false,
@@ -89,7 +89,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           advancedOptions: true,
           disabled: false,
@@ -109,7 +109,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           isFromUrl: false,
           dataUrl: '',
@@ -141,7 +141,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           isFromUrl: false,
           options: [{
@@ -167,7 +167,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           isFromUrl: false,
           options: [{
@@ -193,7 +193,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100
         },
         {
@@ -205,7 +205,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100
         },
         {
@@ -217,7 +217,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100
         },
         {
@@ -229,7 +229,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           advancedOptions: true,
           rateValue: 0,
@@ -246,7 +246,7 @@ export const FormBuilder = new Vue({
           text: 'Switch',
           group: 'form',
           isUnique: false,
-          span: 8,
+          span: 12,
           labelWidth: 100,
           activeText: '',
           inActiveText: ''
@@ -260,7 +260,7 @@ export const FormBuilder = new Vue({
           isHelpBlockVisible: false,
           isPlaceholderVisible: false,
           isUnique: true,
-          span: 8,
+          span: 12,
           labelWidth: 100
         },
         {

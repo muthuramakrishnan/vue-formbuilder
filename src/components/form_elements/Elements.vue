@@ -5,7 +5,7 @@
     class="dragArea"
     :group= "{ name:'formbuilder', pull:'clone', put:false }"
     :sort="false">
-      <el-col :span="12" :class="{ 'is-disabled': checkStopDragCondition(field) }" v-for="(field, index) in fields" :key="index">
+      <el-col :span="12" v-for="(field, index) in fields" :key="index">
         <el-button class="button__sidebar">
           {{ field.text }}
         </el-button>

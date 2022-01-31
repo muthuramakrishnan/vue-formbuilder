@@ -1,15 +1,29 @@
 <template>
 <div>
   <el-container>
+    <el-aside class="wrapper--sidebar" width="25%">
+      <el-tabs type="border-card" v-model="activeTabForFields">
+        <el-tab-pane name="elements" label="Elements">
+          <elements />
+        </el-tab-pane>
+
+        <el-tab-pane name="properties" label="Properties">
+          <properties v-show="Object.keys($store.activeField).length > 0"></properties>
+        </el-tab-pane>
+      </el-tabs>
+
+      <!--{{ $store.activeField }}-->
+    </el-aside>
     <el-main class="el-main-left">
       <div class="wrapper--forms">
         <el-form>
-          <el-row>
-            <el-button style="margin-bottom: 10px;" type="primary" @click="addSection">Add Section</el-button>
-          </el-row>
-
+      
           <el-row v-if="forms.length === 0">
-            <div class="empty-section">Please add Sections</div>
+            <div class="empty-section">
+            <img src="../assets/empty_states.png" class="empty_states">
+            <div class="empt_head">Start by adding first section </div>
+            <div class="empt_desc">Build your own custom form with all the fields required </div>
+            </div>
           </el-row>
 
           <template v-for="(eachFormObj, eachFormIndex) in forms">
@@ -20,7 +34,7 @@
                     <el-input placeholder="Please input section title" v-model="eachFormObj.title" style="width: 100%;"></el-input>
                   </el-col>
                   <el-col :span="6">
-                    <el-button type="danger" round style="float: right" @click="deleteSection(eachFormIndex, eachFormObj.title)">Delete Section</el-button>
+                    <el-button type="danger" style="float: right" @click="deleteSection(eachFormIndex, eachFormObj.title)">Delete Section</el-button>
                   </el-col>
                 </el-row>
               </div>
@@ -55,23 +69,13 @@
             </div>
           </template>
         </el-form>
+          <el-row class="x-center">
+          <el-button style="margin-bottom: 10px;margin-top:20px;font-family: 'DM Sans', sans-serif !important;" type="primary" @click="addSection">Add Section</el-button>
+          </el-row>
+
       </div>
 
     </el-main>
-
-    <el-aside class="wrapper--sidebar" width="30%">
-      <el-tabs type="border-card" v-model="activeTabForFields">
-        <el-tab-pane name="elements" label="Elements">
-          <elements />
-        </el-tab-pane>
-
-        <el-tab-pane name="properties" label="Properties">
-          <properties v-show="Object.keys($store.activeField).length > 0"></properties>
-        </el-tab-pane>
-      </el-tabs>
-
-      <!--{{ $store.activeField }}-->
-    </el-aside>
   </el-container>
 </div>
 </template>
@@ -132,9 +136,6 @@ export default {
 .empty-section {
   text-align: center;
   font-size: 40px;
-  background: linear-gradient(to bottom,#FFF,#409EFF);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 
 .dragArea {
@@ -212,7 +213,7 @@ export default {
 }
 
 .section-block {
-    border: 1px solid #ebebeb;
+    border: 1px solid #f9f9f9;
     border-radius: 3px;
 }
 
