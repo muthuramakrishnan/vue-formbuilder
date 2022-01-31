@@ -31,10 +31,10 @@
               <div class="source">
                 <el-row>
                   <el-col :span="18">
-                    <el-input placeholder="Please input section title" v-model="eachFormObj.title" style="width: 100%;"></el-input>
+                    <el-input placeholder="Please input section title" class="brN" v-model="eachFormObj.title" style="width: 100%;"></el-input>
                   </el-col>
                   <el-col :span="6">
-                    <el-button type="danger" style="float: right" @click="deleteSection(eachFormIndex, eachFormObj.title)">Delete Section</el-button>
+                    <el-button type="danger" plain  circle style="float: right" @click="deleteSection(eachFormIndex, eachFormObj.title)"><i class="el-icon-delete"></i></el-button>
                   </el-col>
                 </el-row>
               </div>
@@ -215,6 +215,8 @@ export default {
 .section-block {
     border: 1px solid #f9f9f9;
     border-radius: 3px;
+    box-shadow: 0 2px 4px 0 #b5b5b51f, 0 0 6px 0 #efefef0a;
+
 }
 
 .section-block .source {
